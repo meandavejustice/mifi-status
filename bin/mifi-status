@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var status = require('../index.js');
+
+status(function(err, body) {
+  if (err) console.error(err);
+  else console.log(body);
+});

@@ -1,0 +1,33 @@
+{
+  "name": "mifi-status",
+  "version": "1.0.0",
+  "description": "get status from mifi device",
+  "main": "index.js",
+  "bin": "bin/wifi-status",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mifi",
+    "verizon",
+    "wireless",
+    "internet",
+    "device",
+    "jetpack",
+    "hotspot",
+    "mobile"
+  ],
+  "author": "meandave",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "request": "2.69.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meandavejustice/mifi-status.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meandavejustice/mifi-status/issues"
+  },
+  "homepage": "https://github.com/meandavejustice/mifi-status#readme"
+}
