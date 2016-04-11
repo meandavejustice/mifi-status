@@ -7,9 +7,18 @@ get the status of your mobile wifi hotspot
 `mifi-status | grep -i "BatteryPercent"`
 
 ``` js
-mifiStatus(function(err, data) {
+
+var mifiStatus = require('mifi-status');
+
+mifiStatus.status(function(err, data) {
   if (!err) {
     console.log(data['statusBarBatteryPercent']);
+  }
+});
+
+mifiStatus.connections(function(err, data) {
+  if (!err) {
+    console.log(data.connectedDevicesList[0].hostname);
   }
 })
 ```

@@ -1,6 +1,6 @@
 {
   "name": "mifi-status",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "get status from mifi device",
   "main": "index.js",
   "bin": "bin/wifi-status",
