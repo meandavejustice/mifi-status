@@ -1,8 +1,16 @@
 #!/usr/bin/env node
 
-var status = require('../index.js');
+var status = require('../index.js').status;
+var connections = require('../index.js').connections;
 
 status(function(err, body) {
   if (err) console.error(err);
-  else console.log(body);
+  else {
+    connections(function(err, cbody) {
+      if (err) {
+        console.error('Failed to retrieve connected devices: ', err);
+        console.log(body);
+      } else console.log(Object.assign(body, cbody));
+    });
+  }
 });
